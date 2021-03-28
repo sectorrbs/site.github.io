@@ -1,0 +1,71 @@
+// main:../style.less
+
+.center {
+    background-image: url(../../images/descr_bg.png);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position-x: 1px;
+
+    &__text {
+        padding-top: 163px;
+        max-width: 642px;
+        font-size: 46.9px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: @darkgrey;
+
+        &-bold {
+            font-weight: 900;
+        }
+    }
+
+    &__subtext {
+        font-size: 22.1px;
+        color: #505050;
+        text-transform: none;
+
+        &-bold {
+            font-weight: 700;
+            font-size: 22.1px;
+        }
+    }
+
+    &__btn {
+        margin-top: 45px;
+        border: none;
+        width: 262px;
+        height: 67px;
+        background-color: @blue;
+        font-size: 17.9px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        padding-right: 75px;
+        .btn-link(@blue);
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../../images/bg_btn-center.svg);
+            width: 79px;
+            height: 67px;
+            right: -3px;
+            top: 0;
+            background-repeat: no-repeat;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../../images/btn_arrow.png);
+            width: 27px;
+            height: 14px;
+            right: 19px;
+            top: 26px;
+        }
+    }
+}

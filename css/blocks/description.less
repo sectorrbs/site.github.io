@@ -1,0 +1,87 @@
+// main:../style.less
+
+.description {
+    background-color: #f6f6f6;
+    height: 519px;
+    position: relative;
+
+    .container {
+        position: relative;
+    }
+
+    &__wrapper {
+
+        height: 100%;
+        width: 100%;
+    }
+
+    &__img {
+        position: absolute;
+
+        &--uzi {
+            position: absolute;
+            left: 688px;
+            top: 0;
+            z-index: 2;
+        }
+
+        &--big {
+            position: absolute;
+            left: 889px;
+            bottom: 0;
+
+        }
+    }
+
+    &__title {
+        .title();
+        position: relative;
+        padding: 96px 0 76px;
+        text-align: left;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../../images/descr_icon.png);
+            width: 29px;
+            height: 22px;
+            left: 0;
+            bottom: 36px;
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: 300;
+        letter-spacing: 0.01em;
+        color: #4c4c4c;
+        // max-width: 615px;
+        max-width: (625/1200)*100%;
+
+    }
+
+    &__link {
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
+        color: #4ca1e3;
+        position: relative;
+        display: block;
+        width: 615px;
+        text-align: right;
+        padding-right: 56px;
+        margin-top: 26px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../../images/descr_icon_arrow.png);
+            width: 19px;
+            height: 9px;
+            right: 28px;
+            top: 2px;
+        }
+    }
+}

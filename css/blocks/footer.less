@@ -1,0 +1,282 @@
+// main:../style.less
+
+.footer {
+    height: 498px;
+    background-color: #08192a;
+    position: relative;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__content {
+        width: 25%;
+
+        &-title {
+            padding: 92px 0 36px;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+        }
+
+        &-list {
+            list-style: none;
+        }
+
+        &-link {
+            font-size: 14px;
+            font-weight: 300;
+            text-decoration: underline;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+            padding-bottom: 20px;
+            display: inline-block;
+
+            &:hover {
+                text-decoration: none;
+                color: #61ace6;
+            }
+        }
+
+        &--services {
+            padding-left: 100px;
+        }
+
+        &--useful {
+            padding-left: 40px;
+        }
+    }
+
+
+    &__logo {
+        display: flex;
+        padding: 79px 0 36px;
+
+        &-text-start {
+            font-size: 31px;
+            font-weight: 100;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            color: #ffffff;
+
+        }
+
+        &-text-bold {
+            font-weight: 900;
+        }
+
+        &-cross {
+            display: block;
+            position: relative;
+            width: 23px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 22px;
+                background-color: #61ace6;
+                bottom: 5px;
+                left: 8px;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 25px;
+                height: 6px;
+                background-color: #61ace6;
+                top: 12px;
+                left: -1px;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 300;
+        letter-spacing: 0.025em;
+        color: #bfbfbf;
+
+        &--copy {
+            margin-top: 36px;
+        }
+    }
+
+    &__social {
+        margin-top: 32px;
+        display: flex;
+
+        &-link {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 43px;
+            height: 37px;
+            background-color: transparent;
+            // border: 1px solid #61ace6;
+            background-image: url(../../images/hex4.svg);
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.025em;
+            color: #61ace6;
+            &:hover {
+                color: #08192a;
+                background-image: url(../../images/hex6.svg);
+            }
+        }
+
+        &-link+&-link {
+            margin-left: 9px;
+        }
+    }
+
+    &__adress {
+        max-width: 210px;
+        padding-left: 37px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
+        letter-spacing: 0.025em;
+        color: #ffffff;
+        position: relative;
+
+        &::before {
+            content: '\f3c5';
+            position: absolute;
+            font-family: Font Awesome\ 5 Free;
+            font-weight: 900;
+            font-size: 17.8px;
+            letter-spacing: 0.025em;
+            color: #61ace6;
+            left: 0;
+            top: 2px;
+        }
+
+        &-link {
+            display: inline-block;
+            padding: 4px 0 0 37px;
+            font-size: 14px;
+            line-height: 19px;
+            font-weight: 300;
+            text-decoration: underline;
+            letter-spacing: 0.025em;
+            color: #61ace6;
+        }
+    }
+
+    &__working {
+        max-width: 190px;
+        padding: 22px 0 0 37px;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 300;
+        letter-spacing: 0.025em;
+        color: #9a9a9a;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 25px;
+            background-image: url(../../images/time_footer_icon.png);
+            width: 13px;
+            height: 13px;
+        }
+
+        &-bold {
+            color: #ffffff;
+        }
+    }
+
+    &__phone {
+        max-width: 190px;
+        padding: 24px 0 0 37px;
+        font-size: 16px;
+        line-height: 23px;
+        font-weight: 300;
+        color: #ffffff;
+        position: relative;
+
+        &::before {
+            content: '\f879';
+            font-family: Font Awesome\ 5 Free;
+            font-weight: 900;
+            position: absolute;
+            top: 24px;
+            left: 0;
+            font-size: 18.8px;
+            letter-spacing: 0.025em;
+            color: #61ace6;
+        }
+
+        &-number {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__requestcall-link {
+        display: inline-block;
+        padding: 22px 0 0 37px;
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 700;
+        text-decoration: underline;
+        letter-spacing: 0.05em;
+        color: #61ace6;
+        position: relative;
+
+        &::before {
+            content: '\f044';
+            font-family: Font Awesome\ 5 Free;
+            font-weight: 900;
+            position: absolute;
+            top: 21px;
+            left: 0;
+            font-size: 16.8px;
+            letter-spacing: 0.05em;
+            color: #61ace6;
+        }
+    }
+
+    &__box-developers {
+        height: 62px;
+        background-color: #071726;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__box-text {
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        color: #a2a2a2;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: -33px;
+            top: -3px;
+            background-image: url(../../images/footer_dev_icon.png);
+            width: 21px;
+            height: 21px;
+            opacity: 0.85;
+        }
+    }
+}
